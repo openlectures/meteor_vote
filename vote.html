@@ -1,0 +1,26 @@
+<head>
+  <title>vote</title>
+</head>
+
+<body>
+  {{> list}}
+  {{> form}}
+</body>
+
+<template name="list">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <ul>
+    {{#each lectures}}
+    <li>{{subject}} - {{title}}</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="form">
+  <form id="new_entry">
+    <input type="text" name="subject" id="new_lecture_subject">
+    <input type="text" name="title" id="new_lecture_title">
+    <input type="submit" value="Add">
+  </form>
+</template>
