@@ -1,15 +1,15 @@
 <head>
-  <title>vote</title>
+  <title>Vote</title>
 </head>
 
 <body>
   {{> list}}
   {{> form}}
+  {{loginButtons}}
 </body>
 
 <template name="list">
-  <h1>Hello World!</h1>
-  {{greeting}}
+  <h1>Vote for your lectures here!</h1>
   <ul>
     {{#each lectures}}
     <li>{{subject}} - {{title}}</li>
