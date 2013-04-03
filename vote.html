@@ -12,7 +12,7 @@
   <h1>Vote for your lectures here!</h1>
   <ul>
     {{#each lectures}}
-    <li>{{subject}} - {{title}}</li>
+    <li data-lecture-id="{{_id}}">{{subject}} - {{title}} ({{score}}) <button type="submit" id="upvote">upvote</button></li>
     {{/each}}
   </ul>
 </template>
